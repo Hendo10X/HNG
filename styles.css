@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    width: 90%;
+    overflow: hidden;
+    flex-direction: row;
+}
+
+.left-panel, .right-panel {
+    padding: 20px;
+    width: 50%;
+}
+
+.left-panel {
+    background: #3b5998;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-panel h1 {
+    margin: 0;
+    font-size: 48px;
+}
+
+.left-panel h2 {
+    margin: 10px 0;
+    font-size: 36px;
+}
+
+.left-panel button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #fff;
+    color: #3b5998;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.right-panel {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-panel img {
+    border-radius: 50%;
+    width: 200px; /* Ensure this is the natural width */
+    height: 200px; /* Ensure this is the natural height */
+    margin-bottom: 20px;
+}
+
+.right-panel h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.right-panel ul {
+    list-style: none;
+    padding: 0;
+}
+
+.right-panel ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.links a {
+    display: block;
+    margin: 10px 0;
+    color: #3b5998;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .left-panel, .right-panel {
+        width: 100%;
+        padding: 20px 10px;
+    }
+    .left-panel h1 {
+        font-size: 36px;
+    }
+    .left-panel h2 {
+        font-size: 28px;
+    }
+    .left-panel button {
+        font-size: 16px;
+    }
+    .right-panel img {
+        width: 150px;
+        height: 150px;
+    }
+    .right-panel h2 {
+        font-size: 20px;
+    }
+    .right-panel ul li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .left-panel h1 {
+        font-size: 28px;
+    }
+    .left-panel h2 {
+        font-size: 24px;
+    }
+    .left-panel button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    .right-panel img {
+        width: 120px;
+        height: 120px;
+    }
+    .right-panel h2 {
+        font-size: 18px;
+    }
+    .right-panel ul li {
+        font-size: 14px;
+    }
+}
+
